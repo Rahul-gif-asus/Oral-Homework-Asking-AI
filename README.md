@@ -1,43 +1,74 @@
 # Oral-Homework-Asking-AI
 
-## This Program will ask you the Questions based on Different Dynasties, ever situated in India. You can add your own data in the Given Object in the source code, and Program can ask you randomly those questions. And then you have to answer it by speaking to your Microphone. The Program Asks you the Question By Speaking.
+A Python-based interactive program that asks historical questions about Indian dynasties and expects spoken answers through a microphone. This tool helps users test their knowledge by verbally responding to questions in an engaging and personalized manner.
 
+## Features
 
-# Change and Replace your Own Data. 
+- **Historical Quiz**: Asks questions about various dynasties in India, including Rajput, Turkish Rulers, Khalji, Tughlaq, Sayyid, and Lodhi dynasties.
+- **Customizable Data**: Users can add or modify historical data in a predefined object structure, allowing personalized quizzes.
+- **Voice Interaction**: The program speaks the questions aloud and captures answers via the microphone, offering a unique oral practice experience.
+  
+## Getting Started
 
-### You can replace your own data with my data, but don't change the variable. As you know they are interconnectedi the code. If you wanted, then you have to change the bottom variable names as well.
+### Prerequisites
+- Python 3.x
+- Microphone for voice input
+- Python packages (listed in `requirements.txt`)
 
-Remember: Program also Reads the Keys in the Object. If you want the Program ask you Question, More Personalised. Then, also change the Keys as per what data title you are updating in the Object. I am Talking about all keys and nested keys as well.
+### Installation
 
-Below is the Object, Where you Write your own keys and Values : 
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Rahul-gif-asus/Oral-Homework-Asking-AI.git
+   cd Oral-Homework-Asking-AI
+   ```
 
-    DynastyMapping = {
-        "Rajput": {
-            "Tomaras": "Early twelfth century to 1165",
-            "Ananga Pala": "1130 to 1145",
-            "Chauhans": "1165 to 1192",
-            "Prithviraj Chauhan": "1175 to 1192",
-        },
+2. **Install Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-        "Early Turkish Rulers": {"Early Turkish Rulers": "1206 to 1290",
-                                 "Qutbuddin Aybak": "1206 to 1210",
-                                 "Shamsuddin Iitutmish": "1210 to 1236",
-                                 "Raziyya": "1236 to 1240",
-                                 "Ghiyasuddin Balban": "1266 to 1287"},
-        "Khalji": {"Khalji Dynasty": "1290 to 1320",
-                   "Jalaluddin Khalji": "1290 to 1296",
-                   "Alauddin Khalji": "1296 to 1316"},
+### Usage
 
-        "Tuughluq": {"Tuughluq Dynasty": "1320 to 1414",
-                     "Ghiyasuddin Tuughluq": "1320 to 1324",
-                     "Muhammad Tuughluq": "1324 to 1351",
-                     "Firuz Shah Tuughluq": "1351 to 1388"},
-        "Sayyid": {"Sayyid Dynasty": "1414 to 1451",
-                   "Khizr Dynasty": "1414 to 1421"},
-        "Lodhi": {"Lodhi Dynasty": "1451 to 1526",
-                  "Bahlul Lodhi": "1451 to 1489"}
+1. Run the program:
+   ```bash
+   python Main.py
+   ```
+
+2. Follow the instructions to answer the questions verbally when prompted.
+
+3. **Customizing Data**:
+   - You can modify the `DynastyMapping` object in `Main.py` to add your own dynasties and details.
+   - Keep the variable structure intact to avoid errors in processing.
+
+   ```python
+   DynastyMapping = {
+       "Rajput": {
+           "Tomaras": "Early twelfth century to 1165",
+           "Ananga Pala": "1130 to 1145",
+           ...
+       },
+       ...
+   }
+   ```
+
+## Example
+
+Here’s a sample structure of the `DynastyMapping` object, which you can expand or edit:
+
+```python
+DynastyMapping = {
+    "Rajput": {
+        "Tomaras": "Early twelfth century to 1165",
+        "Prithviraj Chauhan": "1175 to 1192",
+    },
+    "Khalji": {
+        "Alauddin Khalji": "1296 to 1316",
     }
+    ...
+}
+```
 
+## Contributing
 
-
-Copyright ©️ 2022. All Rights of Creation of this Repo and It's Content are the Original Product of Rahul Vishwakarma. Made with Love for Everyone. 
+Feel free to fork this repository and make modifications. Pull requests are welcome!
